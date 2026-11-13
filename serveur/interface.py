@@ -76,6 +76,7 @@ class FenetreCarrefour(QMainWindow):
         ns_vert = (self.etat_feux == 0)
         semm_vert = (self.etat_feux == 2)
 
+
         for v in self.liste_vehicules[:]:
             feu_vert = ns_vert if v.axe in ["S->N", "N->S"] else semm_vert
             v.avancer(feu_vert, self.liste_vehicules)
@@ -104,6 +105,8 @@ class FenetreCarrefour(QMainWindow):
         self.timer_feux.stop()
         self.alerte_active = True
         self.mode_statut = f"PRÉEMPTION - {axe_prioritaire}"
+
+        self.liste_vehicules = [v for v in self.liste_vehicules if v.axe != axe_prioritaire]
         
         samu = Vehicule(axe_prioritaire, est_samu=True)
         self.liste_vehicules.append(samu)

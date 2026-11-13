@@ -3,7 +3,7 @@ import json
 import time
 
 def envoyer_trame(action, axe=""):
-    HOST = '127.0.0.1'  # IP locale (À remplacer par l'IP de ton PC le jour du TP)
+    HOST = '192.168.1.80'  # ATTENTION : À CHANGER LE JOUR DE L'EXAMEN APRÈS AVOIR FAIT 'ip a' SUR LA VM
     PORT = 5000
     
     # Construction de la trame V2I
