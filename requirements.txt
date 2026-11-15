@@ -1,1 +1,2 @@
-PySide6
+# Dépendances requises pour la SAÉ 3.02 (Équipe WebTL)
+PySide6>=6.5.0
