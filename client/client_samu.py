@@ -21,7 +21,7 @@ def envoyer_trame(action: str, axe: str = "") -> None:
         None
     """
     # IP de la VM Ubuntu (à modifier le jour de la soutenance avec la commande 'ip a')
-    HOST = '192.168.1.80'
+    HOST = '192.168.1.81'
     PORT = 5000
     
     # On prépare le dictionnaire avec les infos de sécurité du CdC
