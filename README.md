@@ -113,12 +113,7 @@ source venv/bin/activate
 python3 serveur/main.py
 ~~~
 
-4. **Configurer et lancer le client sur le second PC :** Ouvrez `client/client_samu.py`, remplacez la valeur de `HOST` par l'adresse IPv4 relevée sur la VM serveur, puis lancez le client :
-
-~~~python
-HOST = '192.168.1.80'  # Remplacer par l'IP de la VM Serveur
-PORT = 5000
-~~~
+4. **Lancer le client sur le second PC :** Lancez le script client et saisissez l'adresse IPv4 de la VM serveur lorsqu'elle vous est demandée dans le terminal (ou appuyez sur `Entrée` pour utiliser l'IP par défaut) :
 
 ~~~powershell
 python client/client_samu.py
